@@ -74,7 +74,7 @@ The most elementary component of Mage is a **Spell**. A spell, as the word sugge
 
 The basic design for Mage UI would appear something like:
 
-![system design](https://drive.google.com/file/d/1Pwkh6TYgLik0o8qU0yu1O7E6VZ7xEDkr/preview)
+![system design](https://drive.google.com/uc?export=view&id=1JAMMfqAm9zABgz7meJ1PqHpBgUGl9jQp)
 
 Source: [https://drive.google.com/file/d/1Pwkh6TYgLik0o8qU0yu1O7E6VZ7xEDkr/view?usp=sharing](https://drive.google.com/file/d/1Pwkh6TYgLik0o8qU0yu1O7E6VZ7xEDkr/view?usp=sharing)
 
