@@ -1,25 +1,25 @@
 # Take home exercise - Service Caching
 
-### Prerequisites
+## Prerequisites
 It is highly recommended to go through the getting [started page](main/getting-started.md) before jumping to this exercise.
 
-### Requirements
-This exercise will be divided into three parts, and each individual will be evaluated based upon how well they perform in each step.
+## Requirements
+This exercise will be divided into five parts, and each individual will be evaluated based upon how well they perform in each step.
 The goal of this exercise will be to build a full-fledged RPC service which would allow to get and set data to a Redis cache.
 
-### Some Useful Tips
+## Some Useful Tips
 1. Always code to an interface, wherever possible. This allows us to have better test coverage for codebase and have mutually detacheable items. If you do not understand what this means, Take out some time to go through [this](https://medium.com/rungo/interfaces-in-go-ab1601159b3a).
 2. Follow the strategy of "accept interfaces, return structs" in your code wherever possible. Read more about it if you aren't sure what this means.
 3. It is important to follow the branching structure mentioned in the steps below (and the squash step) as it allows the reviewer to review every commit as an individual entity, rather than a plethora of code.
 4. Document whatever isn't obvious. Anything which is specific to a step (like setting some config for redis, or how to run the server, etc) must be documented in `Part 5`.
 
 
-##### Part 1 - Initialize empty repository
+### Part 1 - Initialize empty repository
 Initialize an empty repository in your space on Github. Name this repository as `cache-service`. The repository must be initialized with an Apache license and a readme file.
 
 Going forward, every part must be committed to the repository in its own commit - one commit per part. In order to do that, it is recommended to use a branching strategy with git, and merge your branch to master when you believe the section is complete.
 
-##### Part 2 - Creating RPC service
+### Part 2 - Creating RPC service
 For this section, you'll have to use `protocol buffers` and `protobuf generators`. If you are not aware of what these words mean, please have a look here: [Link](https://developers.google.com/protocol-buffers/docs/reference/go-generated).
 
 * Create a branch named `init-rpc-service`.
@@ -49,7 +49,7 @@ For this section, you'll have to use `protocol buffers` and `protobuf generators
    Check [this](https://grpc.io/docs/languages/go/basics/) for hints on how you can use protobuf for the requirements above.
 * Once you are satisfied with your changes, squash all your commits in the branch and merge it to master (Very important to squash commits, as it will help for better evaluation and review).
 
-##### Part 3 - Implementing Cache service
+### Part 3 - Implementing Cache service
 In this section, we will implement the methods created above and actually allow users to store and retrieve data from a `Redis` cache.
 * Create another branch named `redis-impl`.
 * Install and setup redis on your local. Use [this](https://redis.io/topics/quickstart) to set this up quickly and run it on your system. Redis must be configured to run on port `6379` (default port).
@@ -64,7 +64,7 @@ In this section, we will implement the methods created above and actually allow 
     Document any redis script that needs to be executed at start in a folder called `init` and name the file as `initialize_redis.sh`.
 * Once satisfied with the changes, SQUASH all commits into one and merge the branch to master.
 
-##### Part 4 - Creating custom cache client
+### Part 4 - Creating custom cache client
 The sections so far have navigated and helped in setting up a simple Set and Get client. Now, we will create custom RPC methods catered to a specific business requirement.
 
 * Create a branch named `user-client`.
@@ -107,7 +107,7 @@ The sections so far have navigated and helped in setting up a simple Set and Get
 * Once satisfied with code, squash all changes and merge to master.
 
 
-#### Part 5 - Documentation
+### Part 5 - Documentation
 As with every production ready codebase, provide a small documentation on how to run the service and test it locally. The steps must be reproducible and should be written in a way so that any evaluator is able to execute the setup locally. Do not include how to setup go, protobuf, redis, etc).
 
 Make the access for the repository public and reach out to the interviewer with a link to github repository once done. It would also be useful to provide the following information in the documentation:
