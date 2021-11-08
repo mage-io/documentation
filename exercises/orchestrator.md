@@ -1,7 +1,7 @@
 # Take home exercise - Orchestrator Service
 
 ## Prerequisites
-It is highly recommended to go through the getting [started page](main/getting-started.md) before jumping to this exercise.
+It is highly recommended to go through the getting [started page](https://github.com/mage-io/documentation/blob/main/getting-started.md) before jumping to this exercise.
 
 ## Requirements
 * This exercise will be divided into five parts, and each individual will be evaluated based upon how well they perform in each step.
